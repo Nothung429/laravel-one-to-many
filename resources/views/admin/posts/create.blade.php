@@ -24,9 +24,9 @@
                         @enderror
                     </div>
                     <div class="form-group">
-                        <label for="category">Categoria</label>
+                        <label for="category">Category</label>
                         <select class="form-control @error('category_id') is-invalid @enderror" id="category" name="category_id">
-                            <option value="">Seleziona Categoria</option>
+                            <option value="">Select Category</option>
                             @foreach ($categories as $category)
                                 <option value="{{$category->id}}">{{$category->name}}</option>
                             @endforeach
